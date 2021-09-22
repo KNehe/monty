@@ -16,6 +16,7 @@ void perform_operation(stack_t **stack, char *code, unsigned int line_no)
 		{"push", push},
 		{"pall", pall},
 		{"pint", pint},
+		{"pop", pop},
 		{NULL, NULL}
 	};
 
