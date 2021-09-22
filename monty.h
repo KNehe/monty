@@ -1,5 +1,11 @@
-#ifndef MONTY_H
-#define MONTY_H
+#ifndef MONTY_HD
+#define MONTY_HD
+#define  _GNU_SOURCE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -30,6 +36,16 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+
+extern int value;
+int value;
+
+void process_string(stack_t **stack, char *string, unsigned int line_no);
+void push(stack_t **stack, unsigned int line_number);
+void perform_operation(stack_t **stack, char *tokens, unsigned int line_no);
+int check_digit(char *token);
+void pall(stack_t **stack, unsigned int line_no);
 
 
 #endif
