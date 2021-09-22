@@ -15,6 +15,7 @@ void perform_operation(stack_t **stack, char *code, unsigned int line_no)
 	instruction_t ops[] = {
 		{"push", push},
 		{"pall", pall},
+		{"pint", pint},
 		{NULL, NULL}
 	};
 
