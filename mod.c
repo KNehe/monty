@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * mod - computes the rest of the division of the second 
+ * mod - computes the rest of the division of the second
  * top element of the stack by the top element of the stack.
  * @stack: double pointer to stack
  * @line_no: current line number in source file
