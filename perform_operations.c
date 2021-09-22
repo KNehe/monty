@@ -31,7 +31,7 @@ void perform_operation(stack_t **stack, char *code, unsigned int line_no)
 		}
 		i++;
 	}
-	printf("L%d: unknown instruction %s\n", line_no, code);
-	/* free stack */
+	fprintf(stderr, "L%d: unknown instruction %s\n", line_no, code);
+	free_stack(stack, line_no);
 	exit(EXIT_FAILURE);
 }

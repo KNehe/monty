@@ -13,7 +13,7 @@ void pall(stack_t **stack, unsigned int line_no)
 
 	if (stack == NULL)
 	{
-		printf("L%d: invalid stack\n", line_no);
+		fprintf(stderr, "L%d: invalid stack\n", line_no);
 		exit(EXIT_FAILURE);
 	}
 

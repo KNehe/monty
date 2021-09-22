@@ -21,8 +21,8 @@ void process_string(stack_t **stack, char *string, unsigned int line_no)
 		val = strtok(NULL, " ");
 		if (!check_digit(val))
 		{
-			printf("L%d: usage: push integer\n", line_no);
-			/* free stack */
+			fprintf(stderr, "L%d: usage: push integer\n", line_no);
+			free_stack(stack, line_no);
 			exit(EXIT_FAILURE);
 		}
 		value = atoi(val);

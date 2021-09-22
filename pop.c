@@ -13,7 +13,7 @@ void pop(stack_t **stack, unsigned int line_no)
 
 	if (stack == NULL || *stack == NULL)
 	{
-		printf("L%d: can't pint, stack empty\n", line_no);
+		fprintf(stderr, "L%d: can't pint, stack empty\n", line_no);
 		exit(EXIT_FAILURE);
 	}
 	if ((*stack)->next != NULL)
