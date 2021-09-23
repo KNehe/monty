@@ -26,6 +26,7 @@ void perform_operation(stack_t **stack, char *code, unsigned int line_no)
 		{"mod", mod},
 		{"pchar", pchar},
 		{"pstr", pstr},
+		{"rotl", rotl},
 		{NULL, NULL}
 	};
 
