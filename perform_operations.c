@@ -27,6 +27,7 @@ void perform_operation(stack_t **stack, char *code, unsigned int line_no)
 		{"pchar", pchar},
 		{"pstr", pstr},
 		{"rotl", rotl},
+		{"rotr", rotr},
 		{NULL, NULL}
 	};
 
