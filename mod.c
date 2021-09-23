@@ -29,7 +29,7 @@ void mod(stack_t **stack, unsigned int line_no)
 		exit(EXIT_FAILURE);
 	}
 
-	result = next->n / temp->n;
+	result = next->n % temp->n;
 	next->n = result;
 
 	*stack = next;
